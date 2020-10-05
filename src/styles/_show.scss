@@ -1,0 +1,31 @@
+.books-container {
+
+    margin-top: 3vh;
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-direction: column;
+
+    .book {
+        @media screen and(max-width: 750px) {
+            width: 95%;
+        }
+
+        margin-bottom: 10px;
+        margin-top: 20px;
+        border-radius: 10px;
+        padding: 20px;
+        background: whitesmoke;
+        width: 80%;
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+        box-shadow: 3px 3px 15px gray;
+        flex-direction: column;
+
+        p {
+            margin-top: 10px;
+        }
+    }
+}

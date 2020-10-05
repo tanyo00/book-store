@@ -1,0 +1,51 @@
+.home-page-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 90vh;
+
+    .info {
+        display: flex;
+        justify-items: center;
+        align-items: center;
+        flex-direction: column;
+
+        h4 {
+            margin-top: 5px;
+
+        }
+
+        .text {
+            @media screen and(max-width: 600px) {
+                width: 90%;
+                padding: 20px;
+            }
+
+            background: #002244;
+            border-radius: 10px;
+            padding: 50px;
+            color: white;
+        }
+
+        button {
+            margin-top: 5px;
+            padding: 10px 20px;
+            background: dodgerblue;
+            border: none;
+            font-size: 18px;
+            border-radius: 10px;
+            color: white;
+            font-weight: bold;
+            outline: none;
+            cursor: pointer;
+
+            &:hover,
+            &:active,
+            &:focus {
+                background: #002D62;
+                transition-duration: 0.4s;
+            }
+        }
+    }
+}
